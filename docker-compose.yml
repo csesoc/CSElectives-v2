@@ -44,7 +44,7 @@ services:
       - postgres
 
   postgres:
-    image: postgres:15.3-alpine
+    image: postgres:15.10-alpine
     ports:
       - 5432:5432
     environment:
