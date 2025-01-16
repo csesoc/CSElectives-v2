@@ -1,5 +1,5 @@
 # Grab the latest Node base image
-FROM node:20.2-alpine as builder
+FROM node:20.18-alpine as builder
 
 # Set the current working directory inside the container
 WORKDIR /app
@@ -15,7 +15,7 @@ RUN npm run build
 
 
 # Grab the latest Node base image
-FROM node:20.2-alpine as runner
+FROM node:20.18-alpine as runner
 
 # Set the current working directory inside the container
 WORKDIR /app
